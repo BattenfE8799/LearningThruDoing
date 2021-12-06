@@ -20,7 +20,6 @@ def load_tiles():
                  starting_position = (x,y) 
              _world[(x, y)] = None if tile_name == '' else getattr(__import__('peg_game'), tile_name)(x, y)
 
-load_tiles()
 
 
 

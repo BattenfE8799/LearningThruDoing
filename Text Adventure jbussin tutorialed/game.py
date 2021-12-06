@@ -11,7 +11,7 @@ def play():
     print(room.intro_text())
     
     while player.is_alive() and not player.victory:
-        room = world.tile_exists(player.__location_x, player.__location_y) # room object if room exists, this is the players location
+        room = world.world.tile_exists(player.__location_x, player.__location_y) # room object if room exists, this is the players location
         room.modify_player(player) #modifys player location
         
         #check again since the room could have changed the player's state
